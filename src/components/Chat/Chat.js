@@ -82,11 +82,12 @@ const Chat = ({ location }) => {
           }
         },
         (error) => {
-          const message =
-            (error.response && error.response.data) ||
-            error.message ||
-            error.toString();
-          toast.error(message);
+          console.log("Có lỗi xảy ra");
+          // const message =
+          //   (error.response && error.response.data) ||
+          //   error.message ||
+          //   error.toString();
+          // toast.error(message);
         }
       );
     }
